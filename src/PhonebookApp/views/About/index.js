@@ -114,7 +114,7 @@ class About extends React.Component {
               <a
                 rel="noopener noreferrer"
                 className={styles.contactLink}
-                href="https://github.com/DmytroLysenko"
+                href="https://github.com/DmytroLysenko/react-hw-08-phonebook"
                 target="_blank"
               ><span></span></a>
             </li>
