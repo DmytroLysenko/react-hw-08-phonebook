@@ -1,0 +1,66 @@
+@value colorRedLight from "../../utils/variables.module.css";
+@value colorDark from "../../utils/variables.module.css";
+@value colorGreyDark from "../../utils/variables.module.css";
+@value colorBlueLight from "../../utils/variables.module.css";
+@value colorWhite from "../../utils/variables.module.css";
+
+.base {
+  display: block;
+  padding: 0;
+  background-color: colorBlueLight;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.btn {
+  composes: base;
+  width: 100%;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+}
+
+.link {
+  composes: base;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.btn:hover,
+.link:hover {
+  background-color: colorRedLight;
+  box-shadow: 0 0 5px 2px colorBlueLight;
+}
+
+.btn:disabled {
+  background-color: colorGreyDark;
+  cursor: auto;
+}
+
+.btn:hover:disabled {
+  box-shadow: none;
+}
+
+.btn-light {
+  composes: btn;
+  color: colorWhite;
+}
+
+.btn-dark {
+  composes: btn;
+  color: colorDark;
+}
+
+.link-light {
+  composes: link;
+  color: colorWhite;
+}
+
+.link-dark {
+  composes: link;
+  color: colorDark;
+}

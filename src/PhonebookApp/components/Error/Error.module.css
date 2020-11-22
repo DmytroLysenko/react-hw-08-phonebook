@@ -1,0 +1,10 @@
+@value colorBlueLight from "../../utils/variables.module.css";
+
+.container {
+  color: colorBlueLight;
+}
+
+.btnContainer {
+  width: 45%;
+  margin: 0 auto;
+}

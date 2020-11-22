@@ -1,0 +1,7 @@
+@value colorBlueDark from "../../utils/variables.module.css";
+
+.title {
+  text-align: center;
+  color: colorBlueDark;
+  margin: 0;
+}

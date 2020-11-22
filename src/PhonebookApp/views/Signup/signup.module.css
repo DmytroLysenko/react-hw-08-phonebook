@@ -1,0 +1,97 @@
+@value colorRedLight from "../../utils/variables.module.css";
+@value colorWhite from "../../utils/variables.module.css";
+@value colorDark from "../../utils/variables.module.css";
+@value colorGreyLight from "../../utils/variables.module.css";
+@value colorGreyDark from "../../utils/variables.module.css";
+
+.container {
+  padding: 30px 0;
+}
+
+.container-dark {
+  composes: container;
+  color: colorGreyLight;
+}
+
+.container-light {
+  composes: container;
+  color: colorDark;
+}
+
+.formContainet {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0 30px 0;
+}
+
+.formContainet::before {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  display: block;
+  width: 70%;
+  height: 2px;
+  content: "";
+  border-radius: 100%;
+  background-color: colorRedLight;
+}
+
+.formContainet::after {
+  margin: 0 auto;
+  margin-top: 20px;
+  display: block;
+  width: 70%;
+  height: 2px;
+  content: "";
+  border-radius: 100%;
+  background-color: colorRedLight;
+}
+
+.input {
+  width: 60%;
+  padding: 5px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  margin: 10px 0;
+  color: colorDark;
+  text-align: center;
+  caret-color: colorDark;
+  font-weight: 500;
+}
+
+.input-dark {
+  composes: input;
+  background-color: colorGreyDark;
+}
+
+.input-light {
+  composes: input;
+  background-color: colorWhite;
+}
+
+.input::placeholder {
+  text-align: center;
+  font-weight: 300;
+  color: colorDark;
+}
+
+.btnContainer {
+  width: 45%;
+  margin: 0 auto;
+}
+
+.back {
+  text-align: center;
+  font-size: 0.75em;
+  font-style: italic;
+}
+
+.link-dark {
+  color: colorGreyLight;
+}
+
+.link-light {
+  color: colorDark;
+}

@@ -1,0 +1,80 @@
+@value colorRedLight from "../../utils/variables.module.css";
+@value colorGreyDark from "../../utils/variables.module.css";
+@value colorGreyLight from "../../utils/variables.module.css";
+@value colorDark from "../../utils/variables.module.css";
+
+.container {
+  padding: 30px 0;
+}
+
+.afterTitle {
+  text-align: center;
+  font-style: italic;
+  color: colorGreyDark;
+  margin-bottom: 50px;
+  font-weight: 600;
+}
+
+.linkList {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.linkList::before {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  display: block;
+  width: 70%;
+  height: 2px;
+  content: "";
+  border-radius: 100%;
+  background-color: colorRedLight;
+}
+
+.linkList::after {
+  margin: 0 auto;
+  margin-top: 20px;
+  display: block;
+  width: 70%;
+  height: 2px;
+  content: "";
+  border-radius: 100%;
+  background-color: colorRedLight;
+}
+
+.linkItem {
+  margin-bottom: 20px;
+}
+
+.linkItem:nth-last-of-type(1) {
+  margin-bottom: 0;
+}
+
+.link {
+  display: block;
+  height: 100%;
+  padding: 5px;
+  text-decoration: none;
+  font-weight: 700;
+  color: colorDark;
+  border-bottom: 1px solid transparent;
+}
+
+.link:hover {
+  color: colorRedLight;
+}
+
+.link-dark {
+  composes: link;
+  color: colorGreyLight;
+}
+
+.link-light {
+  composes: link;
+  color: colorDark;
+}

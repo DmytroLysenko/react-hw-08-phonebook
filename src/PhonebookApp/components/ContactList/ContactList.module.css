@@ -1,0 +1,37 @@
+@value colorBlueDark from "../../utils/variables.module.css";
+@value colorBlueLight from "../../utils/variables.module.css";
+@value colorRedLight from "../../utils/variables.module.css";
+
+.container {
+  overflow: hidden;
+  height: 100%;
+  box-shadow: 0 0 3px 1px colorBlueDark;
+  border-radius: 5px;
+
+}
+
+.list {
+  list-style: none;
+  padding: 5px;
+  margin: 0;
+
+}
+
+.item {
+  margin-bottom: 6px;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 0 2px 0.5px colorBlueDark;
+}
+
+.item:hover {
+  box-shadow: 0 0 3px 1px colorRedLight;
+}
+
+.item:nth-last-of-type(1) {
+  margin-bottom: 0;
+}
+
+.noList {
+  color: colorBlueLight;
+}

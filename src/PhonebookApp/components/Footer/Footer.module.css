@@ -1,0 +1,17 @@
+@value colorGreyDark from "../../utils/variables.module.css";
+
+.footerText {
+  margin: 0;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 0.75em;
+  width: 100%;
+  color: colorGreyDark;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.link {
+  color: colorGreyDark;
+}

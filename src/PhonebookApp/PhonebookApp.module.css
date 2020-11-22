@@ -1,0 +1,31 @@
+@value colorBlueDark from "./utils/variables.module.css";
+@value colorBlueLight from "./utils/variables.module.css";
+@value colorGreyLight from "./utils/variables.module.css";
+@value colorDark from "./utils/variables.module.css";
+
+.container {
+  width: 300px;
+  height: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  padding-bottom: 30px;
+  border-radius: 5px;
+  position: relative;
+  caret-color: transparent;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.container-light {
+  composes: container;
+  box-shadow: 0 0 3px 1px colorBlueDark;
+  background-color: colorGreyLight;
+}
+
+.container-dark {
+  composes: container;
+  box-shadow: 0 0 5px 2px colorBlueLight;
+  background-color: colorDark;
+}

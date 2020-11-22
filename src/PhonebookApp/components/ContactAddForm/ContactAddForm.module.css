@@ -1,0 +1,48 @@
+@value colorBlueDark from "../../utils/variables.module.css";
+@value colorBlueLight from "../../utils/variables.module.css";
+@value colorWhite from "../../utils/variables.module.css";
+@value colorGreyDark from "../../utils/variables.module.css";
+@value colorDark from "../../utils/variables.module.css";
+
+
+.form {
+  box-shadow: 0px 0px 3px 1px colorBlueDark;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.label {
+  display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  font-weight: 500;
+  color: colorBlueLight;
+}
+
+.input {
+  width: 70%;
+  padding: 5px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: colorDark;
+  caret-color: colorDark;
+}
+
+.input-dark {
+  composes: input;
+  background-color: colorGreyDark;
+}
+
+.input-light {
+  composes: input;
+  background-color: colorWhite;
+}
+
+.input:focus {
+  box-shadow: 0px 0px 3px 0 colorBlueDark;
+}
+

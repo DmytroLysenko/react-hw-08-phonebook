@@ -1,0 +1,139 @@
+@value colorRedLight from "../../utils/variables.module.css";
+@value colorDark from "../../utils/variables.module.css";
+@value colorGreyDark from "../../utils/variables.module.css";
+
+.baseText {
+  font-size: 0.85em;
+  font-style: italic;
+  color: colorGreyDark;
+}
+
+.link {
+  color: colorGreyDark;
+}
+
+.appName {
+  font-weight: 700;
+  color: colorDark;
+}
+
+.appName::after {
+  margin: 0 auto;
+  margin-top: 20px;
+  display: block;
+  width: 70%;
+  height: 2px;
+  content: "";
+  border-radius: 100%;
+  background-color: colorRedLight;
+}
+
+.appAbout {
+  composes: baseText;
+}
+
+.appTechnologies {
+  composes: baseText;
+}
+
+.author {
+  composes: baseText;
+  padding: 10px 0;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactsList {
+  composes: list;
+  margin-bottom: 15px;
+}
+.socialList {
+  composes: list;
+}
+
+.item {
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.item:hover {
+  transform: scale(1.1);
+}
+
+.item:nth-last-of-type(1) {
+  margin-right: 0;
+}
+
+.phone {
+  composes: item;
+  background-image: url("../../assets/phone-hang-up.svg");
+}
+
+.email {
+  composes: item;
+  background-image: url("../../assets/envelop.svg");
+}
+
+.facebook {
+  composes: item;
+  background-image: url("../../assets/facebook2.svg");
+}
+
+.linkedin {
+  composes: item;
+  background-image: url("../../assets/linkedin.svg");
+}
+
+.github {
+  composes: item;
+  background-image: url("../../assets/github.svg");
+}
+
+.contactLink {
+  display: block;
+  height: 100%;
+}
+
+.btnContainer {
+  width: 45%;
+  margin: 0 auto;
+}
+
+.author::after {
+  margin: 0 auto;
+  margin-top: 20px;
+  display: block;
+  width: 70%;
+  height: 2px;
+  content: "";
+  border-radius: 100%;
+  background-color: colorRedLight;
+}
+
+.TM {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: colorGreyDark;
+  font-size: 0.75em;
+  font-style: italic;
+}
+
+.linkTM {
+  composes: link;
+  color: colorGreyDark;
+  text-decoration: none;
+}

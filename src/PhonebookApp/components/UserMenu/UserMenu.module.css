@@ -1,0 +1,40 @@
+@value colorDark from "../../utils/variables.module.css";
+@value colorGreyLight from "../../utils/variables.module.css";
+
+.container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.container-dark {
+  composes: container;
+  color: colorGreyLight;
+}
+
+.container-light {
+  composes: container;
+  color: colorDark;
+}
+
+.avatar {
+  width: 20px;
+  border-radius: 50%;
+  margin-right: 10px;
+  box-shadow: 0 0 3px 0 colorDark;
+}
+
+.name {
+  margin-right: 10px;
+}
+
+.menu {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../../assets/menu.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}

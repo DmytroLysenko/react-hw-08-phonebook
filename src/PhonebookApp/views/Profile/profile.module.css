@@ -1,0 +1,48 @@
+@value colorRedLight from "../../utils/variables.module.css";
+@value colorGreyLight from "../../utils/variables.module.css";
+@value colorDark from "../../utils/variables.module.css";
+
+.base {
+  margin-bottom: 20px;
+}
+
+.dark {
+  composes: base;
+  color: colorGreyLight;
+}
+
+.light {
+  composes: base;
+  color: colorDark;
+}
+
+.avatar {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.name,
+.email,
+.count {
+  font-weight: 500;
+  font-size: 0.85em;
+  font-style: italic;
+}
+
+.dataConatiner::after {
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: block;
+  width: 70%;
+  height: 2px;
+  content: "";
+  border-radius: 100%;
+  background-color: colorRedLight;
+}
+
+.btnContainer {
+  width: 45%;
+  margin: 0 auto;
+}

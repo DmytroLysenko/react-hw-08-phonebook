@@ -1,0 +1,63 @@
+@value colorBlueLight from "../../utils/variables.module.css";
+@value colorRedLight from "../../utils/variables.module.css";
+@value colorGreyLight from "../../utils/variables.module.css";
+@value colorDark from "../../utils/variables.module.css";
+
+.container {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 10%;
+  right: 0;
+}
+
+.item {
+  width: 35px;
+  writing-mode: vertical-rl;
+  padding: 10px 0;
+  background-color: colorBlueLight;
+  transform: rotate(180deg);
+  cursor: pointer;
+  border-radius: 10px 0;
+  border: 1px solid colorDark;
+}
+
+.item:hover {
+  background-color: colorRedLight;
+}
+
+.link {
+  display: block;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+}
+
+.link-dark {
+  composes: link;
+  color: colorDark;
+}
+
+.link-light {
+  composes: link;
+  color: colorGreyLight;
+}
+
+.item-dark {
+  composes: item;
+  color: colorDark;
+}
+
+.item-light {
+  composes: item;
+  color: colorGreyLight;
+}

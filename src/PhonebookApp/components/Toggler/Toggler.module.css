@@ -1,0 +1,46 @@
+@value colorRedLight from "../../utils/variables.module.css";
+@value colorGreyDark from "../../utils/variables.module.css";
+@value colorGreyLight from "../../utils/variables.module.css";
+@value colorDark from "../../utils/variables.module.css";
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60px;
+  height: 24px;
+  padding: 1px;
+  border-radius: 25px;
+  position: relative;
+  cursor: pointer;
+  border: 2px solid colorDark;
+  background-color: colorGreyDark;
+}
+
+.choiceItem {
+  width: 24px;
+  height: 100%;
+}
+
+.thumb {
+  position: absolute;
+  top: 1px;
+  width: 22px;
+  height: 22px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  transition: left 0.5s;
+  border-color: colorDark;
+  background-color: colorGreyLight;
+  box-shadow: 0 0 3px 1px colorRedLight;
+}
+
+.thumbLeft {
+  composes: thumb;
+  left: 2px;
+}
+
+.thumbRight {
+  composes: thumb;
+  left: 36px;
+}
